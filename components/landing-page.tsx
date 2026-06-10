@@ -26,8 +26,6 @@ const fieldStats = [
 ];
 
 const navItems = ["Dossiers", "Route", "Pakistan", "Journal"];
-const basePath = process.env.NEXT_PUBLIC_BASE_PATH ?? "";
-const withBasePath = (path: string) => `${basePath}${path}`;
 
 export function LandingPage() {
   const reduceMotion = useReducedMotion();
@@ -137,7 +135,7 @@ function Navigation() {
 function Hero({ heroImageRef }: { heroImageRef: RefObject<HTMLDivElement | null> }) {
   return (
     <section id="top" className="relative min-h-screen overflow-hidden pt-20">
-      <div ref={heroImageRef} className="absolute inset-0 -z-20 bg-cover bg-center" style={{ backgroundImage: `url('${withBasePath("/images/hero-karakoram.svg")}')` }} />
+      <div ref={heroImageRef} className="absolute inset-0 -z-20 bg-cover bg-center" style={{ backgroundImage: "url('/images/hero-karakoram.svg')" }} />
       <div className="absolute inset-0 -z-10 bg-[linear-gradient(90deg,rgba(7,8,7,.96),rgba(7,8,7,.64)_42%,rgba(7,8,7,.2)),linear-gradient(0deg,rgba(7,8,7,1),rgba(7,8,7,.05)_45%,rgba(7,8,7,.68))]" />
       <div className="section-shell grid min-h-[calc(100vh-5rem)] items-end pb-12 pt-24 lg:grid-cols-[1.08fr_.72fr] lg:gap-16 lg:pb-20">
         <motion.div initial={{ opacity: 0, y: 34 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.9, ease: [0.22, 1, 0.36, 1] }}>
@@ -194,7 +192,7 @@ function ExpeditionGrid({ expeditions, cardRefs }: { expeditions: Expedition[]; 
       <div className="grid gap-6 lg:grid-cols-3">
         {expeditions.map((expedition, index) => (
           <article key={expedition.id} ref={(node) => { cardRefs.current[index] = node; }} className="group min-h-[560px] overflow-hidden border border-white/10 bg-obsidian shadow-dossier">
-            <div className="h-64 bg-cover bg-center transition duration-700 group-hover:scale-[1.035]" style={{ backgroundImage: `linear-gradient(0deg, rgba(7,8,7,.86), rgba(7,8,7,.1)), url('${withBasePath(expedition.image)}')` }} />
+            <div className="h-64 bg-cover bg-center transition duration-700 group-hover:scale-[1.035]" style={{ backgroundImage: `linear-gradient(0deg, rgba(7,8,7,.86), rgba(7,8,7,.1)), url('${expedition.image}')` }} />
             <div className="p-6">
               <div className="flex items-start justify-between gap-4">
                 <p className="field-label">{expedition.region}</p>
