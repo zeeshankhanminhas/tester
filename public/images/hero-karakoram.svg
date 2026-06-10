@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1200" role="img" aria-label="Karakoram mountain silhouette placeholder">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#1b1d1c"/><stop offset="0.45" stop-color="#36403f"/><stop offset="1" stop-color="#080908"/></linearGradient>
+    <linearGradient id="gold" x1="0" y1="0" x2="1" y2="0"><stop offset="0" stop-color="#c8a45d" stop-opacity="0.85"/><stop offset="1" stop-color="#5c4b2c" stop-opacity="0.1"/></linearGradient>
+  </defs>
+  <rect width="1800" height="1200" fill="url(#sky)"/>
+  <circle cx="1310" cy="280" r="160" fill="#d6b46a" opacity="0.22"/>
+  <path d="M0 760 180 610 320 710 520 440 700 680 870 330 1040 670 1220 510 1410 705 1590 430 1800 735 1800 1200 0 1200Z" fill="#151715"/>
+  <path d="M520 440 602 574 560 548 700 680 870 330 950 560 912 535 1040 670 1220 510 1285 575 1250 560 1410 705 1590 430 1668 548 1638 535 1800 735 1800 860 0 860 0 760 180 610 253 662 236 653 320 710Z" fill="#2c302b" opacity="0.88"/>
+  <path d="M0 885 C330 820 474 925 730 860 S1210 805 1800 890 L1800 1200 0 1200Z" fill="#090a09"/>
+  <path d="M0 935 C370 870 620 985 940 910 S1415 880 1800 940" fill="none" stroke="url(#gold)" stroke-width="6" opacity="0.28"/>
+</svg>
