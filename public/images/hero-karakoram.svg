@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1800 1100" preserveAspectRatio="xMidYMid slice">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#17202a"/><stop offset=".45" stop-color="#5d6470"/><stop offset=".72" stop-color="#c4a66b"/><stop offset="1" stop-color="#1f211d"/></linearGradient>
+    <radialGradient id="sun" cx="72%" cy="17%" r="42%"><stop stop-color="#f6d28b" stop-opacity=".7"/><stop offset=".32" stop-color="#c8a45d" stop-opacity=".22"/><stop offset="1" stop-color="#000" stop-opacity="0"/></radialGradient>
+    <linearGradient id="ice" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#edf1ef"/><stop offset=".45" stop-color="#9ba6a4"/><stop offset="1" stop-color="#27302f"/></linearGradient>
+    <linearGradient id="rock" x1="0" y1="0" x2="0" y2="1"><stop stop-color="#62645c"/><stop offset=".46" stop-color="#242720"/><stop offset="1" stop-color="#080908"/></linearGradient>
+    <filter id="grain"><feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="3" stitchTiles="stitch"/><feColorMatrix type="saturate" values="0"/><feComponentTransfer><feFuncA type="table" tableValues="0 .18"/></feComponentTransfer></filter>
+    <filter id="haze"><feGaussianBlur stdDeviation="16"/></filter>
+  </defs>
+  <rect width="1800" height="1100" fill="url(#sky)"/>
+  <rect width="1800" height="1100" fill="url(#sun)"/>
+  <path d="M0 430 C170 360 270 390 395 330 C530 265 612 294 720 220 C850 132 966 198 1082 146 C1242 75 1385 150 1515 108 C1644 68 1728 98 1800 70 L1800 1100 L0 1100Z" fill="#202721" opacity=".44" filter="url(#haze)"/>
+  <path d="M-40 700 L130 520 L245 590 L390 360 L520 540 L700 245 L828 500 L990 235 L1148 520 L1338 185 L1485 500 L1648 280 L1840 560 L1840 1100 L-40 1100Z" fill="url(#ice)"/>
+  <path d="M390 360 L520 540 L450 518 L430 640 L355 560 L245 590Z" fill="#3d443e" opacity=".78"/>
+  <path d="M700 245 L828 500 L738 468 L690 690 L628 510 L520 540Z" fill="#252d2d" opacity=".82"/>
+  <path d="M990 235 L1148 520 L1030 480 L984 690 L930 510 L828 500Z" fill="#1f2626" opacity=".78"/>
+  <path d="M1338 185 L1485 500 L1385 452 L1320 710 L1260 512 L1148 520Z" fill="#1a211f" opacity=".86"/>
+  <path d="M-60 805 C140 706 268 770 430 662 C610 540 745 630 900 530 C1090 405 1216 540 1390 430 C1548 330 1670 418 1860 350 L1860 1100 L-60 1100Z" fill="url(#rock)"/>
+  <path d="M-40 900 C180 824 360 888 545 795 C760 688 940 785 1140 660 C1350 528 1580 640 1840 520 L1840 1100 L-40 1100Z" fill="#090a09" opacity=".92"/>
+  <path d="M50 858 C240 812 400 845 560 780 M760 727 C940 682 1050 684 1190 612 M1320 610 C1470 554 1580 548 1730 500" stroke="#d5d6cb" stroke-opacity=".18" stroke-width="3" fill="none"/>
+  <path d="M0 0 H1800 V1100 H0Z" fill="#000" opacity=".14"/>
+  <rect width="1800" height="1100" filter="url(#grain)" opacity=".5"/>
+</svg>

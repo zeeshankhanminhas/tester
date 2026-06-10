@@ -1,0 +1,32 @@
+[
+  {
+    "id": "rf-kkh-01",
+    "title": "Karakoram Traverse",
+    "region": "Hunza / Khunjerab",
+    "coordinates": "36.3167° N, 74.6500° E",
+    "duration": "12 days",
+    "altitude": "4,693 m",
+    "brief": "Convoy line, glacier wind, border weather. Hold until the pass opens.",
+    "image": "/images/karakoram.svg"
+  },
+  {
+    "id": "rf-skardu-02",
+    "title": "Baltoro Field Line",
+    "region": "Skardu / Shigar",
+    "coordinates": "35.2971° N, 75.6333° E",
+    "duration": "14 days",
+    "altitude": "5,150 m",
+    "brief": "Granite towers. Cold river. A narrow window between cloud and stone.",
+    "image": "/images/baltoro.svg"
+  },
+  {
+    "id": "rf-deosai-03",
+    "title": "Deosai Plateau Watch",
+    "region": "Astore / Skardu",
+    "coordinates": "35.0300° N, 75.4400° E",
+    "duration": "7 days",
+    "altitude": "4,114 m",
+    "brief": "High plain, exposed camp, no cover. The horizon does the speaking.",
+    "image": "/images/deosai.svg"
+  }
+]
